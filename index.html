@@ -12,28 +12,37 @@
  
 </head>
 <body>
-  <header>
-    <div>
-      <svg width="71" height="52">
-        <use href="../images/icons.svg#icon-logo-1"></use>
-
-      </svg>
-      <div >
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo" href="./index.html">
+        <svg width="71" height="52">
+          <use href="../images/icons.svg#icon-logo-1"></use>
+        </svg>
+      </a>
+      <div class="header__wrap">
         <nav>
-            <ul class="header__list">
-                <li ><a href="#hero">Home</a></li>
-                <li ><a href="#offerings">About</a></li>
-                <li ><a href="#favorites">Service</a></li>
-                <li ><a href="#custumer">Menu</a></li>
-                <li ><a href="#subscribe">Contact</a></li>
-            </ul>
+          <ul class="header__list">
+            <li class="header__item"><a href="#hero" class="header__link">Home</a></li>
+            <li class="header__item"><a href="#offerings" class="header__link">About</a></li>
+            <li class="header__item"><a href="#favorites" class="header__link">Service</a></li>
+            <li class="header__item"><a href="#custumer" class="header__link">Menu</a></li>
+            <li class="header__item"><a href="#subscribe" class="header__link">Contact</a></li>
+          </ul>
         </nav>
-
-        <button  type="button">Order Now</button>
-    </div>
+        
+        <ul class="menu" data-menu>
+          <li class="menu__item"><a href="#hero" class="menu__link menu__link--br-top-right">Home</a></li>
+          <li class="menu__item"><a href="#offerings" class="menu__link">About</a></li>
+          <li class="menu__item"><a href="#favorites" class="menu__link">Service</a></li>
+          <li class="menu__item"><a href="#custumer" class="menu__link">Menu</a></li>
+          <li class="menu__item"><a href="#subscribe" class="menu__link menu__link--br-bottom">Contact</a></li>
+        </ul>
+  
+        <button class="btn hero__btn" type="button">Order Now</button>
+      </div>
     
-    <button  type="button" data-menu-open>
-        <svg width="28" height="28">
+    <button class="header__menu" type="button" data-menu-open>
+        <svg class="header__menu-icon" width="28" height="28">
             <use href="../images/icons.svg#menu-btn"></use>
         </svg>
     </button>
